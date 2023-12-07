@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin:0;   
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#FFFFFF;
+font-family: 'poppins', sans-serif;
+}
+
+.container {
+padding:5px;
+width:350px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+}
+
+.container h3 {
+font-size:15px;
+font-weight:600;
+}
+
+.container .input-box {
+height:55px;
+width:100%;
+margin-top:5px;
+display:flex;
+align-items:center;
+}
+
+.container .input-box input {
+all:unset;
+height:53px;
+width:260px;
+padding-left:15px;
+transition:all .2s;
+padding-right:60px;
+border:1px solid grey;
+border-radius:3px;
+}
+
+.container .input-box input:focus {
+border-color:#3B9AC6;
+transition:all .2s;
+}
+
+.container .input-box i {
+font-size:19px;
+color:grey;
+transition:all .2s;
+cursor:pointer;
+position:absolute;
+right:28px;
+}
+
+.container .indicator-box {
+height:6px;
+width:99%;
+background:rgb(220, 220, 220);
+margin-top:5px;
+border-radius:10px;
+display:none;
+}
+
+.container .indicator-box div {
+content:"";
+position:absolute;
+height:6px;
+width:0px;
+background:red;
+border-radius:10px;
+transition:all .2s;
+}
+
+.container .indicator-box div.weak {
+background:#FA015F;
+width:33%;
+transition:all .2s;
+}
+
+.container .indicator-box div.medium {
+background:#F7D804;
+width:66%;
+transition:all .2s;
+}
+
+.container .indicator-box div.strong {
+background:#63C357;
+width:99%;
+transition:all .2s;
+}
+
+.container span {
+white-space:nowrap;
+font-size:12px;
+color:grey;
+position:absolute;
+margin-top:8px;
+display:none;
+}
+
+::selection {
+background:rgb(100, 149, 237, 0.8);
+color:white;
+}
